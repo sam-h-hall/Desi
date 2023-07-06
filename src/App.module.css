@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.link {
+  color: #b318f0;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.creation-zone {
+  display: grid;
+  /* grid-template-columns: 400px 400px; */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.zone-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.zone-2 > div {
+  flex-grow: 0.499;
+  border: 2px solid red;
+}
+
+.preview-section {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+.tlvl-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tlvl-list li {
+  padding: 10px;
+}
+
+.range {
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  text-align: left;
+  align-self: center;
+}
+
+.preview-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
